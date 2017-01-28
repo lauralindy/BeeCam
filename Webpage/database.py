@@ -8,20 +8,20 @@ Params:
     None
 """
 def create_table():
-    c.execute('''CREATE TABLE IF NOT EXISTS users (first_name text, last_name text, email text, phoneNumber text, password text, profileType text)''')
+    c.execute('''CREATE TABLE IF NOT EXISTS users (first_name text, last_name text, email text, phoneNumber text, password text)''')
     #c.execute('''CREATE TABLE IF NOT EXISTS survey (q1 text, q2 text, q3 text)''')
 
 """
 Adds a user to the users database
 Params:
-    first_name, last_name, email, password, profileType
+    first_name, last_name, email, password
 """
-def create_user(first_name, last_name, email, phoneNumber, password,profileType):
+def create_user(first_name, last_name, email, phoneNumber, password):
     if user_exists(email):
         return False
     else:
         sql = "INSERT INTO users VALUES(?, ?, ?, ?,?,?)"
-        c.execute(sql, (first_name, last_name, email, phoneNumber, password, profileType))
+        c.execute(sql, (first_name, last_name, email, phoneNumber, password))
         conn.commit()
         return True
 
@@ -36,12 +36,6 @@ def user_exists(email):
         return False
     else:
         return True
-"""
-Updates user profileType
-"""
-def user_update(email, profileType):
-    c.execute("UPDATE users SET profileType='" + profileType + "' WHERE profileType = '0' AND email='" + email + "'")
-    conn.commit()
 
 """
 Checks if login information is correct
