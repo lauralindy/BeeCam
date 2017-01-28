@@ -39,7 +39,7 @@ a {
 }
 a:hover,
 a:focus{
-	color: #2F937B;
+	color: #FF7C00;
 	text-decoration: none;
 }
 
@@ -204,18 +204,18 @@ a.btn.btn-primary.my-btn2:hover{
 }
 
 ul.cat.list-inline li a {
-	border: 1px solid #2F937B;
+	border: 1px solid #FF7C00;
 	padding: 5px 15px;
 	font-size: 11px;
 	text-transform: uppercase;
 	font-weight: 600;
 	letter-spacing: 1px;
-	color: #2F937B;
+	color: #FF7C00;
 	transition: all 0.5s;
 }
 
 ul.cat.list-inline li a:hover{
-	background: #2F937B;
+	background: #FF7C00;
 	color: #ffffff;
 }
 
@@ -296,7 +296,7 @@ form#contact {
 }
 #tf-contact .form-control:focus,
 #tf-contact .form-control:hover{
-	border-top: 2px solid #2F937B;
+	border-top: 2px solid #FF7C00;
 }
 nav#tf-footer {
 	background: #222222;

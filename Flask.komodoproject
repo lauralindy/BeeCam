@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Komodo Project File - DO NOT EDIT -->
+<project id="e155cbd9-8f06-e943-be49-9dfeec97852b" kpf_version="5" name="Flask.komodoproject">
+<file id="888291f0-8dd3-2b4e-9699-5e9bf1c8fa6a" idref="e155cbd9-8f06-e943-be49-9dfeec97852b" name="webapp.py" url="WebApp/webapp.py">
+</file>
+<file id="9444b6df-9a93-114c-98e9-171bdda603d0" idref="e155cbd9-8f06-e943-be49-9dfeec97852b" name="t1.py" url="WebApp/t1.py">
+</file>
+<preference-set idref="e155cbd9-8f06-e943-be49-9dfeec97852b" id="project" preftype="project">
+  <long id="prefs_version">1</long>
+</preference-set>
+</project>
