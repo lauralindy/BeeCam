@@ -14,14 +14,14 @@ def create_table():
 """
 Adds a user to the users database
 Params:
-    first_name, last_name, email, password
+    username, password, email, state
 """
-def create_user(first_name, last_name, email, phoneNumber, password):
+def create_user(username, password, email, location):
     if user_exists(email):
         return False
     else:
         sql = "INSERT INTO users VALUES(?, ?, ?, ?,?,?)"
-        c.execute(sql, (first_name, last_name, email, phoneNumber, password))
+        c.execute(sql, (username, password, email, state))
         conn.commit()
         return True
 

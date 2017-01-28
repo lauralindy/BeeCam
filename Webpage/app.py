@@ -1,12 +1,19 @@
-from flask import Flask, render_template, flash, request, redirect,url_for, session
-import database
+from firebase import firebase
+from flask import Flask
+from flask import render_template
+#from .forms import firePut
 
-database.create_table()
+app = Flask(__name__)
+#firebase = firebase.FirebaseApplication("<path tofirebase app>", None)
 
-import util
+@app.route('/')
+@app.route('/index')
+def index():
+    return render_template('index.html', name="Homepage")
 
-app=Flask(_name_)
-app.config['SECRET_KEY']= 'bee'
+@app.route('/testing')
+def testing():
+    return "index.html"
 
-if _name_ == "_main_":
-    app.debug = True
+if __name__ == "__main__":
+    app.run(debug=True)
