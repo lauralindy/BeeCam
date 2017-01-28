@@ -1,6 +1,5 @@
 from firebase import firebase
-from flask import Flask
-from flask import render_template
+from flask import Flask, render_template, flash, request, redirect, url_for, session
 #from .forms import firePut
 
 app = Flask(__name__)
@@ -9,7 +8,7 @@ app = Flask(__name__)
 @app.route('/')
 @app.route('/index')
 def index():
-    return render_template('index.html', name="Homepage")
+    return render_template("index.html")
 
 @app.route('/testing')
 def testing():
