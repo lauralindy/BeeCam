@@ -10,6 +10,30 @@ app = Flask(__name__)
 def index():
     return render_template("index.html")
 
+@app.route('/service')
+def service():
+    return render_template("index.html")
+
+@app.route('/process')
+def process():
+    return render_template("index.html#tf-process")
+
+@app.route('/about')
+def about():
+    return render_template("index.html#tf-about")
+
+@app.route('/ack')
+def ack():
+    return render_template("index.html#tf-acknowledgements")
+
+@app.route('/login')
+def login():
+    return render_template("login.html")
+
+@app.route('/signup')
+def signup():
+    return render_template("signup.html")
+
 @app.route('/testing')
 def testing():
     return "index.html"

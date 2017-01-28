@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>A Bee Cam</title>
     <meta name="description" content="Your Description Here">
-    <meta name="keywords" content="bootstrap themes, portfolio, responsive theme">
+    <meta name="keywords" content="bootstrap themes, process, responsive theme">
     <meta name="author" content="ThemeForces.Com">
     
     <!-- Favicons
@@ -53,7 +53,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                       </button>
-                      <a class="navbar-brand logo" href="index.html">Cornell Vet School Hackathon</a>
+                      <a class="navbar-brand logo" href="{{url_for('index')}}">Cornell Vet School Hackathon</a>
                     </div>
 
                     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -61,10 +61,10 @@
                       <ul class="nav navbar-nav navbar-right">
                         <li><a href="#tf-home">Home</a></li>
                         <li><a href="#tf-service">Services</a></li>
-                        <li><a href="#tf-portfolio">The Process</a></li>
+                        <li><a href="#tf-process">The Process</a></li>
                         <li><a href="#tf-about">About the Team</a></li>
                         <li><a href="#tf-acknowledgements">Acknowledgements</a></li>
-                        <li><a href="login.html">Login</a></li>
+                        <li><a href="{{url_for('login')}}">Login/Signup</a></li>
                       </ul>
                     </div><!-- /.navbar-collapse -->
                 </div><!-- /.container-fluid -->
@@ -75,7 +75,7 @@
                     <h1>Hive Mind</h1>
                     <h3>a machine learning initiative to keep bees and hives healthy</h3>
                     <br>
-                    <a href="#login.html" class="btn btn-primary my-btn">Login</a>
+                    <a href="{{url_for('login')}}" class="btn btn-primary my-btn">Login</a>
                 </div>
             </div>
         </div>
@@ -142,7 +142,7 @@
         </div>
     </div>
 
-    <div id="tf-portfolio">
+    <div id="tf-process">
         <div class="container">
             <div class="section-title">
                 <h3>The Process</h3>
@@ -223,6 +223,7 @@
                   <div class="media-body">
                     <h4 class="media-heading">Mentors</h4>
                     <p>Juan Beltran</p>
+                    <p>Ed Loebach</p>
                   </div>
                 </div>
             </div></center>

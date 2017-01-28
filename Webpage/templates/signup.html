@@ -19,15 +19,15 @@
     <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
 
     <!-- Bootstrap -->
-    <link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css"  href="{{url_for('static', filename='css/bootstrap.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='fonts/font-awesome/css/font-awesome.css')}}">
 
     <!-- Stylesheet
     ================================================== -->
-    <link rel="stylesheet" type="text/css"  href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <link rel="stylesheet" type="text/css"  href="{{url_for('static', filename='css/style.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/responsive.css')}}">
 
-    <script type="text/javascript" src="js/modernizr.custom.js"></script>
+    <script type="text/javascript" src="js/modernizr.custom.js')}}"></script>
 
     <link href='http://fonts.googleapis.com/css?family=Raleway:500,600,700,100,800,900,400,200,300' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Playball' rel='stylesheet' type='text/css'>
@@ -54,7 +54,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                       </button>
-                      <a class="navbar-brand logo" href="index.html">Cornell Vet School Hackathon</a>
+                      <a class="navbar-brand logo" href="{{url_for('index')}}">Cornell Vet School Hackathon</a>
                     </div>
 
                     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -65,7 +65,7 @@
                         <li><a href="index.html#tf-portfolio">Portfolio</a></li>
                         <li><a href="index.html#tf-about">About the Team</a></li>
                         <li><a href="index.html#tf-acknowledgements">Acknowledgements</a></li>
-												<li><a href="login.html">Log In</a></li>
+												<li><a href="{{url_for('login')}}">Log In</a></li>
                       </ul>
                     </div><!-- /.navbar-collapse -->
                 </div><!-- /.container-fluid -->
@@ -108,7 +108,7 @@
 								<hr>
 								<p>Already have an account?</p>
 						</div>
-						<div class="row"><a href="login.html"><font color="#FF7C00">Log In</font></a></div>
+						<div class="row"><a href="{{url_for('login')}}"><font color="#FF7C00">Log In</font></a></div>
         </div>
     </div>
     

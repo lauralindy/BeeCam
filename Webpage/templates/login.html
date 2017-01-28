@@ -13,21 +13,21 @@
     
     <!-- Favicons
     ================================================== -->
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.ico')}}" type="image/x-icon">
+    <link rel="apple-touch-icon" href="{{ url_for('static', filename='img/apple-touch-icon.png')}}">
+    <link rel="apple-touch-icon" sizes="72x72" href="{{ url_for('static', filename='img/apple-touch-icon-72x72.png')}}">
+    <link rel="apple-touch-icon" sizes="114x114" href="{{ url_for('static', filename='img/apple-touch-icon-114x114.png')}}">
 
     <!-- Bootstrap -->
-    <link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css"  href="{{ url_for('static', filename='css/bootstrap.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='fonts/font-awesome/css/font-awesome.css')}}">
 
     <!-- Stylesheet
     ================================================== -->
-    <link rel="stylesheet" type="text/css"  href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <link rel="stylesheet" type="text/css"  href="{{ url_for('static', filename='css/style.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/responsive.css')}}">
 
-    <script type="text/javascript" src="js/modernizr.custom.js"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/modernizr.custom.js')}}"></script>
 
     <link href='http://fonts.googleapis.com/css?family=Raleway:500,600,700,100,800,900,400,200,300' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Playball' rel='stylesheet' type='text/css'>
@@ -54,18 +54,18 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                       </button>
-                      <a class="navbar-brand logo" href="index.html">Cornell Vet School Hackathon</a>
+                      <a class="navbar-brand logo" href="{{url_for('index')}}">Cornell Vet School Hackathon</a>
                     </div>
 
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                       <ul class="nav navbar-nav navbar-right">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="index.html#tf-service">Services</a></li>
-                        <li><a href="index.html#tf-portfolio">Portfolio</a></li>
-                        <li><a href="index.html#tf-about">About the Team</a></li>
-                        <li><a href="index.html#tf-acknowledgements">Acknowledgements</a></li>
-												<li><a href="login.html">Log In</a></li>
+                        <li><a href="{{url_for('index')}}">Home</a></li>
+                        <li><a href="{{url_for('service')}}">Services</a></li>
+                        <li><a href="{{url_for('process')}}">Portfolio</a></li>
+                        <li><a href="{{url_for('about')}}">About the Team</a></li>
+                        <li><a href="{{url_for('ack')}}">Acknowledgements</a></li>
+												<li><a href="{{url_for('signup')}}">Sign Up</a></li>
                       </ul>
                     </div><!-- /.navbar-collapse -->
                 </div><!-- /.container-fluid -->
@@ -104,7 +104,7 @@
 								<p>Don't Have an Account?</p>
 						</div>
 			
-			<div class="row"><a href="signup.html"><font color="#FF7C00">Sign Up</font></a></div>
+			<div class="row"><a href="{{url_for('signup')}}"><font color="#FF7C00">Sign Up</font></a></div>
             </div>
         </div>
     </div>
