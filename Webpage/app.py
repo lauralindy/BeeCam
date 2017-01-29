@@ -1,6 +1,8 @@
 from firebase import firebase
 from flask import Flask, render_template, flash, request, redirect, url_for, session
 from forms import FirePut
+import database
+
 
 app = Flask(__name__)
 firebase = firebase.FirebaseApplication('https://127.0.0.1:5000/', None)
@@ -48,6 +50,7 @@ def upload():
 
 @app.route('/imglink')
 def imglink():
+    database.findCells("C:\Users\laura\Documents\GitHub\BeeCAm\Big Pics\image.jpg")
     return render_template("imglink.html")
 
 @app.route('/testing')
