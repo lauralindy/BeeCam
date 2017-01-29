@@ -44,6 +44,10 @@ def mybees():
 def hive1():
     return render_template("hive1.html")
 
+@app.route('/hive2')
+def hive2():
+    return render_template("hive2.html")
+
 @app.route('/data')
 def data():
     return render_template("data.html")

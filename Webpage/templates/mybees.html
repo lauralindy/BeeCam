@@ -59,7 +59,7 @@
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                       <ul class="nav navbar-nav navbar-right">
-                        <li><a href="{{url_for('mybees')}}">My Bees</a></li>
+                        <li><a href="{{url_for('mybees')}}">My Hives</a></li>
                         <li><a href="{{url_for('data')}}">Data</a></li>
                         <li><a href="{{url_for('upload')}}">Upload</a></li>
                         <li><a href="{{url_for('index')}}">Logout</a></li>
@@ -81,12 +81,12 @@
             
             <div class="row">
                 <div class="col-md-3">
-                    <a href={{url_for('imglink')}}><img src="{{url_for('static', filename='img/box.png')}}" class="img-responsive" style="height: 200px; overflow: hidden"></a>
+                    <a href={{url_for('hive1')}}><img src="{{url_for('static', filename='img/box.png')}}" class="img-responsive" style="height: 200px; overflow: hidden"></a>
                     <figcaption>Hive 1</figcaption>
                 </div>
 
                 <div class="col-md-3">
-                    <img src="{{url_for('static', filename='img/box.png')}}" class="img-responsive" style="height: 200px; overflow: hidden">
+                    <a href={{url_for('hive2')}}><img src="{{url_for('static', filename='img/box.png')}}" class="img-responsive" style="height: 200px; overflow: hidden"></a>
                     <figcaption>Hive 2</figcaption>
                 </div>
 
