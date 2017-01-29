@@ -77,9 +77,9 @@ def imglink():
 def testing():
     return "index.html"
 
-@app.route('/tryit')
-def tryit():
-    return render_template("try.html")
+@app.route('/show')
+def show():
+    return render_template("show.html")
 
 if __name__ == "__main__":
     app.run(debug=True)
