@@ -9,7 +9,7 @@ ap = argparse.ArgumentParser()
 #args = vars(ap.parse_args())
 
 # load the image, clone it for output, and then convert it to grayscale
-image = cv2.imread("C:\Users\Richa\Downloads\capped1.jpg")
+image = cv2.imread("C:\Users\Richa\Downloads\iRED.jpg")
 output = image.copy()
 gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 counter =0
@@ -37,5 +37,5 @@ if circles is not None:
 
 
 	# show the output image
-	cv2.imshow("output", np.hstack([image, output]))
+	cv2.imwrite("output.jpg", np.hstack([image, output]))
 	cv2.waitKey(0)
