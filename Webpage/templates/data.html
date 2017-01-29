@@ -69,46 +69,70 @@
             </nav>
         </div>
     </div>
+    
+    <div id="tf-home">
+        <div class="overlay">
+            <div id="sticky-anchor"></div>
+            <nav id="tf-menu" class="navbar navbar-default">
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                      </button>
+                    </div>
 
-    <div id="tf-process">
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                      <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#tf-ecot">Egg Count Over Time</a></li>
+                        <li><a href="#tf-hph">Honey Produced Per Hive</a></li>
+                      </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+            </nav>
+        </div>
+    </div>
+    
+    <div id="tf-ecot">
         <div class="container">
             <div class="section-title">
-                <h3>The Process</h3>
+                <center><h3>Egg Count Over Time</h3></center>
                 <hr>
             </div>
 
             <div class="space"></div>
 
             <div class="row">
-                <div class="col-md-4">
-                    <img src="{{url_for('static',filename='img/board.jpg')}}" class="img-responsive">
-                </div>
-
-                <div class="col-md-4">
-                    <img src="{{url_for('static',filename='img/01.jpg')}}" class="img-responsive">
-                </div>
-
-                <div class="col-md-4">
-                    <img src="{{url_for('static',filename='img/code.png')}}" class="img-responsive">
+                <div>
+                    <center><img src="{{url_for('static',filename='graphs/eot.png')}}" width=800px></center>
                 </div>
             </div>
-
-            <div class="row toppadding">
-                <div class="col-md-4">
-                    <img src="{{url_for('static',filename='img/bw.jpg')}}" class="img-responsive">
-                </div>
-
-                <div class="col-md-4">
-                    <img src="{{url_for('static',filename='img/circles.png')}}" class="img-responsive">
-                </div>
-
-                <div class="col-md-4">
-                    <img src="{{url_for('static',filename='img/06.jpg')}}" class="img-responsive">
-                </div>
-            </div>
-
         </div>
     </div>
+    
+    <div class="space"></div><hr>
+    
+    <div id="tf-hph">
+        <div class="container">
+            <div class="section-title">
+                <center><h3>Honey Produced Per Hive, Per Year</h3></center>
+            </div>
+
+            <div class="space"></div>
+
+            <div class="row">
+                <div>
+                    <center><img src="{{url_for('static',filename='graphs/honey.png')}}" width=800px></center>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="space"></div>
     
     <nav id="tf-footer">
         <div class="container">
@@ -127,7 +151,6 @@
             </div>
         </div>
     </nav>
-   
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
