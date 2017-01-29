@@ -87,11 +87,7 @@ def imglink2():
     paths5=paths[24:30]
     paths6=paths[30:36]
     paths7=paths[36:42]
-    paths8=paths[42:48]
-    #paths9=paths[48]
-    #paths14=paths[78:84]
-    #paths15=paths[84:90]
-    #paths16=paths[90]
+    paths8=paths[42:47]
     return render_template("imglink2.html", paths1=paths1, paths2=paths2, paths3=paths3, paths4=paths4, paths5=paths5, paths6=paths6, paths7=paths7, paths8=paths8)
 
 
