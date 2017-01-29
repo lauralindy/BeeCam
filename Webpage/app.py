@@ -38,6 +38,10 @@ def signup():
 def mybees():
     return render_template("mybees.html")
 
+@app.route('/data')
+def data():
+    return render_template("data.html")
+
 @app.route('/upload')
 def upload():
     return render_template("upload.html")
