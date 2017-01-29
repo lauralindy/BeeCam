@@ -1,9 +1,9 @@
 from firebase import firebase
 from flask import Flask, render_template, flash, request, redirect, url_for, session
-#from .forms import firePut
+from forms import FirePut
 
 app = Flask(__name__)
-#firebase = firebase.FirebaseApplication("<path tofirebase app>", None)
+firebase = firebase.FirebaseApplication('https://127.0.0.1:5000/', None)
 
 @app.route('/')
 @app.route('/index')
@@ -40,3 +40,14 @@ def testing():
 
 if __name__ == "__main__":
     app.run(debug=True)
+    count = 0
+    @app.route('/api/put', methods=['GET', 'POST'])
+    def fireput():
+        form = FirePut()
+        if form.validate_on_submit():
+            global count
+            count += 1
+            putData = {'Title' : form.title.data, 'Year' : form.year.data, 'Rating' : form.rating.data}
+            firebase.put('/films', 'film' + str(count), putData)
+            return render_template('api-put-result.html', form=form, putData=putData)
+        return render_template('My-Form.html')
