@@ -15,7 +15,7 @@ gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 counter =0
 
 # detect circles in the image
-circles = cv2.HoughCircles(gray, cv2.cv.CV_HOUGH_GRADIENT, 10, 80, param1=80, param2= 40,minRadius = 20, maxRadius= 55)
+circles = cv2.HoughCircles(gray, cv2.cv.CV_HOUGH_GRADIENT, 10, 40, param1=80, param2= 40,minRadius = 20, maxRadius= 40)
 
 # ensure at least some circles were found
 if circles is not None:
@@ -30,7 +30,7 @@ if circles is not None:
 		cv2.rectangle(output, (x - 5, y - 5), (x + 5, y + 5), (0, 128, 255), -1)
 
 		cropped = image[max(y-r,0):min(y+r,image.shape[0]), max(x-r,0):min(x+r, image.shape[1])]
-		cv2.imwrite("cell-capped"+ str(counter) + ".jpg", cropped)
+		cv2.imwrite("cell-red"+ str(counter) + ".jpg", cropped)
 
 		counter +=1
 
