@@ -63,7 +63,15 @@ def imglink():
     paths6=paths[30:36]
     paths7=paths[36:42]
     paths8=paths[42:48]
-    return render_template("imglink.html", paths1=paths1, paths2=paths2, paths3=paths3)
+    paths9=paths[48:54]
+    paths10=paths[54:60]
+    paths11=paths[60:66]
+    paths12=paths[66:72]
+    paths13=paths[72:78]
+    #paths14=paths[78:84]
+    #paths15=paths[84:90]
+    #paths16=paths[90]
+    return render_template("imglink.html", paths1=paths1, paths2=paths2, paths3=paths3, paths4=paths4, paths5=paths5, paths6=paths6, paths7=paths7, paths8=paths8, paths9=paths9, path10=paths10, paths11=paths11, paths12=paths12, paths13=paths13)
 
 @app.route('/testing')
 def testing():
