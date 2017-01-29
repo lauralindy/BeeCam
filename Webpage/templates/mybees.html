@@ -24,7 +24,7 @@
 
     <!-- Stylesheet
     ================================================== -->
-    <link rel="stylesheet" type="text/css"  href="{{url_for('static', filename='css/style.css')}}">
+    <link rel="stylesheet" type="text/css"  href="{{url_for('static', filename='css/stylemybees.css')}}">
     <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/responsive.css')}}">
 
     <script type="text/javascript" src="{{url_for('static', filename='js/modernizr.custom.js')}}"></script>
@@ -59,10 +59,10 @@
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                       <ul class="nav navbar-nav navbar-right">
-                        <li><a href="mybees.html">My Bees</a></li>
-                        <li><a href="upload.html">Upload</a></li>
-                        <li><a href="data.html">Data</a></li>
-                        <li><a href="index.html">Logout</a></li>
+                        <li><a href="{{url_for('mybees')}}">My Bees</a></li>
+                        <li><a href="{{url_for('data')}}">Data</a></li>
+                        <li><a href="{{url_for('upload')}}">Upload</a></li>
+                        <li><a href="{{url_for('index')}}">Logout</a></li>
                       </ul>
                     </div><!-- /.navbar-collapse -->
                 </div><!-- /.container-fluid -->
@@ -80,53 +80,41 @@
             <div class="space"></div>
 
             <div class="row">
-                <div class="col-md-4">
-                    <img src="{{url_for('static', filename='img/09.jpg')}}" class="img-responsive">
+                <div class="col-md-3" style="height: 180px; overflow: hidden">
+                    <img src="{{url_for('static', filename='img/capped.jpg')}}" class="img-responsive">
                 </div>
 
-                <div class="col-md-4">
-                    <img src="{{url_for('static', filename='img/02.jpg')}}" class="img-responsive">
+                <div class="col-md-3" style="height: 180px; overflow: hidden">
+                    <img src="{{url_for('static', filename='img/capped1.jpg')}}" class="img-responsive">
                 </div>
 
-                <div class="col-md-4">
-                    <img src="{{url_for('static', filename='img/03.jpg')}}" class="img-responsive">
+                <div class="col-md-3" style="height: 180px; overflow: hidden">
+                    <a href={{url_for('imglink')}}><img src="{{url_for('static', filename='img/image.jpg')}}" class="img-responsive"></a>
+                </div>
+                
+                <div class="col-md-3" style="height: 180px; overflow: hidden">
+                    <img src="{{url_for('static', filename='img/image3.jpg')}}" class="img-responsive">
                 </div>
             </div>
 
-            <div class="row toppadding">
-                <div class="col-md-4">
-                    <img src="{{url_for('static', filename='img/04.jpg')}}" class="img-responsive">
+            <div class="row toppadding" style="height: 180px; overflow: hidden">
+                <div class="col-md-3">
+                    <img src="{{url_for('static', filename='img/long1.jpg')}}" class="img-responsive">
+                </div>
+              
+                <div class="col-md-3" style="height: 180px; overflow: hidden">
+                    <img src="{{url_for('static', filename='img/long2.jpg')}}" class="img-responsive">
                 </div>
 
-                <div class="col-md-4">
-                    <img src="{{url_for('static', filename='img/05.jpg')}}" class="img-responsive">
-                </div>
-
-                <div class="col-md-4">
-                    <img src="{{url_for('static', filename='img/06.jpg')}}" class="img-responsive">
+                <div class="col-md-3" style="height: 180px; overflow: hidden">
+                    <img src="{{url_for('static', filename='img/larva.jpg')}}" class="img-responsive">
                 </div>
             </div>
 
         </div>
     </div>
-
-    <div id="tf-about">
-        <div class="overlay">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 col-md-offset-6">
-                        <h3>About the Team</h3>
-                        <br>
-                        <h4>Xian Emma Xu</h4><p>Sophomore CS major.</p>
-                        <h4>Laura Lin</h4><p>Freshman CS major.</p>
-                        <h4>Richard Zheng</h4><p>Freshman CS major.</p>
-                        <h4>Anirudh Maddula</h4><p>Freshman CS major.</p>
-                        <br>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    
+    <div class="space"></div>
     
     <nav id="tf-footer">
         <div class="container">

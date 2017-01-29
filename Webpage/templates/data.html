@@ -19,15 +19,15 @@
     <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
 
     <!-- Bootstrap -->
-    <link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css"  href="{{url_for('static', filename='css/bootstrap.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='fonts/font-awesome/css/font-awesome.css')}}">
 
     <!-- Stylesheet
     ================================================== -->
-    <link rel="stylesheet" type="text/css"  href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <link rel="stylesheet" type="text/css"  href="{{url_for('static', filename='css/style.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/responsive.css')}}">
 
-    <script type="text/javascript" src="js/modernizr.custom.js"></script>
+    <script type="text/javascript" src="{{url_for('static', filename='js/modernizr.custom.js')}}"></script>
 
     <link href='http://fonts.googleapis.com/css?family=Raleway:500,600,700,100,800,900,400,200,300' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Playball' rel='stylesheet' type='text/css'>
@@ -53,80 +53,86 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                       </button>
-                      <a class="navbar-brand logo" href="index.html">Cornell Vet School Hackathon</a>
+                      <a class="navbar-brand logo" href="{{url_for('index')}}">Cornell Vet School Hackathon</a>
                     </div>
 
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                       <ul class="nav navbar-nav navbar-right">
-                        <li><a href="mybees.html">My Bees</a></li>
-                        <li><a href="upload.html">Upload</a></li>
-                        <li><a href="data.html">Data</a></li>
-                        <li><a href="idx.html">Logout</a></li>
+                        <li><a href="{{url_for('mybees')}}">My Bees</a></li>
+                        <li><a href="{{url_for('data')}}">Data</a></li>
+                        <li><a href="{{url_for('upload')}}">Upload</a></li>
+                        <li><a href="{{url_for('index')}}">Logout</a></li>
                       </ul>
                     </div><!-- /.navbar-collapse -->
                 </div><!-- /.container-fluid -->
             </nav>
         </div>
     </div>
+    
+    <div id="tf-home">
+        <div class="overlay">
+            <div id="sticky-anchor"></div>
+            <nav id="tf-menu" class="navbar navbar-default">
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                      </button>
+                    </div>
 
-    <div id="tf-mybees">
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                      <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#tf-ecot">Egg Count Over Time</a></li>
+                        <li><a href="#tf-hph">Honey Produced Per Hive</a></li>
+                      </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+            </nav>
+        </div>
+    </div>
+    
+    <div id="tf-ecot">
         <div class="container">
             <div class="section-title">
-                <h3>My Latest Works</h3>
+                <center><h3>Egg Count Over Time</h3></center>
                 <hr>
             </div>
 
             <div class="space"></div>
 
             <div class="row">
-                <div class="col-md-4">
-                    <img src="img/09.jpg" class="img-responsive">
-                </div>
-
-                <div class="col-md-4">
-                    <img src="img/02.jpg" class="img-responsive">
-                </div>
-
-                <div class="col-md-4">
-                    <img src="img/03.jpg" class="img-responsive">
-                </div>
-            </div>
-
-            <div class="row toppadding">
-                <div class="col-md-4">
-                    <img src="img/04.jpg" class="img-responsive">
-                </div>
-
-                <div class="col-md-4">
-                    <img src="img/05.jpg" class="img-responsive">
-                </div>
-
-                <div class="col-md-4">
-                    <img src="img/06.jpg" class="img-responsive">
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-    <div id="tf-about">
-        <div class="overlay">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 col-md-offset-6">
-                        <h3>About the Team</h3>
-                        <br>
-                        <h4>Xian Emma Xu</h4><p>Sophomore CS major.</p>
-                        <h4>Laura Lin</h4><p>Freshman CS major.</p>
-                        <h4>Richard Zheng</h4><p>Freshman CS major.</p>
-                        <h4>Anirudh Maddula</h4><p>Freshman CS major.</p>
-                        <br>
-                    </div>
+                <div>
+                    <center><img src="{{url_for('static',filename='graphs/eot.png')}}" width=800px></center>
                 </div>
             </div>
         </div>
     </div>
+    
+    <div class="space"></div><hr>
+    
+    <div id="tf-hph">
+        <div class="container">
+            <div class="section-title">
+                <center><h3>Honey Produced Per Hive, Per Year</h3></center>
+            </div>
+
+            <div class="space"></div>
+
+            <div class="row">
+                <div>
+                    <center><img src="{{url_for('static',filename='graphs/honey.png')}}" width=800px></center>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="space"></div>
     
     <nav id="tf-footer">
         <div class="container">
@@ -145,7 +151,6 @@
             </div>
         </div>
     </nav>
-   
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>

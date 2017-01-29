@@ -13,19 +13,19 @@
 
     <!-- Favicons
     ================================================== -->
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+    <link rel="shortcut icon" href="{{url_for('static', filename='img/favicon.ico')}}" type="image/x-icon">
+    <link rel="apple-touch-icon" href="{{url_for('static', filename='img/apple-touch-icon.png')}}">
+    <link rel="apple-touch-icon" sizes="72x72" href="{{url_for('static', filename='img/apple-touch-icon-72x72.png')}}">
+    <link rel="apple-touch-icon" sizes="114x114" href="{{url_for('static', filename='img/apple-touch-icon-114x114.png')}}">
 
     <!-- Bootstrap -->
-    <link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css"  href="{{url_for('static', filename='css/bootstrap.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='fonts/font-awesome/css/font-awesome.css')}}">
 
     <!-- Stylesheet
     ================================================== -->
-    <link rel="stylesheet" type="text/css"  href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <link rel="stylesheet" type="text/css"  href="{{url_for('static', filename='css/style.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/responsive.css')}}">
 
     <script type="text/javascript" src="js/modernizr.custom.js"></script>
 
@@ -59,9 +59,10 @@
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                       <ul class="nav navbar-nav navbar-right">
-                        <li><a href="mybees.html">My Bees</a></li>
-                        <li><a href="upload.html">Upload</a></li>
-                        <li><a href="data.html">Data</a></li>
+                        <li><a href="{{url_for('mybees')}}">My Bees</a></li>
+												<li><a href="{{url_for('data')}}">Data</a></li>
+                        <li><a href="{{url_for('upload')}}">Upload</a></li>
+                        <li><a href="{{url_for('index')}}">Logout</a></li>
                       </ul>
                     </div><!-- /.navbar-collapse -->
                 </div><!-- /.container-fluid -->
@@ -73,17 +74,22 @@
         <div class="container">
             <div class="section-title">
                 <h3>Upload</h3>
-                <p>Upload your image(s) here and we'll tell you how healthy your beehives are!</p>
+                <p>Upload your data here and we'll tell you how healthy your beehives are!</p>
                 <hr>
             </div>
 
             <div class="row">
                 <div class="col-md-6 col-md-offset-3">
                     <form id="upload">
-                      <div class="form-group">
-                      <button type="upload" class="btn btn-primary my-btn dark">Choose Photos</button>
-                      </div>
-                      <button type="upload" class="btn btn-primary my-btn dark">Upload</button>
+                        <div class="form-group">
+                            <input type="file" name="file">
+														<input type="date" class="form-control" id="date" placeholder="Date">
+                            <input type="boxid" class="form-control" id="boxid" placeholder="Box ID">
+                            <input type="weight" class="form-control" id="weight" placeholder="Weight">
+                            <input type="temperature" class="form-control" id="temp" placeholder="Temperature">
+                            <input type="humidity" class="form-control" id="hum" placeholder="Humidity">
+                            <input type="submit">
+												</div>
                     </form>
                 </div>
             </div>

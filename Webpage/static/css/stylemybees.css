@@ -1,0 +1,287 @@
+/*http://www.free-css.com/free-css-templates/page208/awesomeness*/
+@import url(http://fonts.googleapis.com/css?family=Raleway:500,600,700,100,800,900,400,200,300);
+@import url(http://fonts.googleapis.com/css?family=Playball);
+
+body, html{
+	font-family: 'Raleway', sans-serif;
+	text-rendering: optimizeLegibility !important;
+	-webkit-font-smoothing: antialiased !important;
+}
+
+@media (min-width: 1200px){
+	.container {
+	width: 1100px;
+	}
+}
+
+h1{
+	text-transform: uppercase;
+}
+
+p{
+	font-size: 13px;
+}
+
+a {
+	color: #ffffff;
+	transition: all 0.8;
+}
+
+a:hover,
+a:focus{
+	color: #FF7C00;
+	text-decoration: none;
+}
+
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { display: inline-block; }
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+
+/* Home Style */
+#tf-home{
+	background: url(../img/honeycomb.jpg); /*http://www.zastavki.com/pictures/originals/2015/Backgrounds_Orange_honeycomb_structure_094946_.jpg*/
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	color: #cfcfcf;
+}
+
+#tf-home .overlay{
+	background: -moz-linear-gradient(top,  rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.73) 17%, rgba(0,0,0,0.66) 35%, rgba(0,0,0,0.55) 62%, rgba(0,0,0,0.4) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.8)), color-stop(17%,rgba(0,0,0,0.73)), color-stop(35%,rgba(0,0,0,0.66)), color-stop(62%,rgba(0,0,0,0.55)), color-stop(100%,rgba(0,0,0,0.4))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc000000', endColorstr='#66000000',GradientType=0 ); /* IE6-9 */
+	height: auto;
+	background-attachment: fixed;
+}
+
+.content{
+	padding: 15% 0 18% 0;
+	text-align: center;
+}
+/* Navigation */
+#tf-menu {
+	margin-bottom: 0;
+	background: transparent;
+	border: 0;
+	color: #fff !important;
+	padding: 2% 0;
+	transition: all 0.5s;
+}
+#sticky {
+    padding: 0.5ex;
+    background-color: #333;
+    color: #fff;
+    font-size: 2em;
+    border-radius: 0.5ex;
+}
+#tf-menu.stick {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10000;
+    background: #222222;
+    padding: 1% 0;
+}
+#tf-menu.navbar-default .navbar-nav > li > a {
+	color: #C5C5C5;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: 700;
+	letter-spacing: 1px;
+}
+
+#tf-menu.navbar-default .navbar-nav > li > a:hover, 
+#tf-menu.navbar-default .navbar-nav > li > a:focus {
+	color: #FF7C00;
+	background-color: transparent;
+}
+
+.logo {
+	font-family: 'Playball', cursive;
+}
+
+.section-title hr{
+	border-color: rgb(255, 124, 0);
+	width: 60px;
+}
+
+.section-title h2{ font-weight: 700;}
+button.btn,
+a.btn {
+	margin: 15px 5px;
+	transition: all 0.5s;
+}
+button.btn.btn-primary.my-btn,
+a.btn.btn-primary.my-btn {
+	background: #FF7C00;
+	border-color: transparent;
+	border-radius: 0px;
+	border-width: 2px;
+	padding: 10px 30px;
+	text-transform: uppercase;
+	font-size: 12px;
+	letter-spacing: 1px;
+	font-weight: 600;
+}
+button.btn.btn-primary.my-btn:hover,
+a.btn.btn-primary.my-btn:hover{
+	background: #FFFFFF;
+	color: #FF7C00;
+	border-color: transparent;
+}
+button.btn.btn-primary.my-btn.dark:hover,
+a.btn.btn-primary.my-btn.dark:hover{
+	background: #222222;
+	color: #ffffff;
+	border-color: transparent;
+}
+a.btn.btn-primary.my-btn2 {
+	background: rgba(47, 147, 123, 0);
+	border-color: #FFFFFF;
+	border-radius: 0px;
+	border-width: 2px;
+	padding: 10px 30px;
+	text-transform: uppercase;
+	font-size: 12px;
+	letter-spacing: 1px;
+	font-weight: 600;
+	color: #FFFFFF;
+}
+
+a.custom-file-upload {
+    border: 1px solid #a1bbd5;
+    display: inline-block;
+    padding: 2px 8px;
+    cursor: pointer;
+}
+
+a.btn.btn-primary.my-btn2:hover{
+	background: #FFFFFF;
+	color: #FF7C00;
+	border-color: transparent;
+}
+
+ul.cat.list-inline li a {
+	border: 1px solid #FF7C00;
+	padding: 5px 15px;
+	font-size: 11px;
+	text-transform: uppercase;
+	font-weight: 600;
+	letter-spacing: 1px;
+	color: #FF7C00;
+	transition: all 0.5s;
+}
+
+ul.cat.list-inline li a:hover{
+	background: #FF7C00;
+	color: #ffffff;
+}
+
+.space{ padding: 20px}
+.toppadding{ padding-top: 30px}
+.nopadding{ padding:  0;}
+
+*
+{
+	margin:0;
+	padding:0;
+}
+
+body{
+font-size:10pt;
+letter-spacing:1px;
+background: url(xbg.gif) no-repeat 0 +25px ;
+font-family: Helvetica, Arial, sans-serif;
+word-spacing: 5px;
+letter-spacing:-1px;
+color: #515151;
+}
+
+#container{
+margin: 100px auto 0 auto;
+width:855px;}
+
+#navdiv
+{
+	text-align: right;
+	height:60px;
+}
+
+#navdiv ul
+{
+	list-style-type: none;
+	list-style-image: none;
+	margin:0 auto 0 auto;
+}
+
+#navdiv ul li
+{
+	float: right;
+	margin-right:10px;
+	list-style-type: none;
+	list-style-image: none;
+}
+
+#navdiv ul li a
+{
+	padding:30px 0 0 0;
+	background: #d0d0d0;
+	display: block;
+	padding-top:10px;
+	width: 100px;
+	height:50px;
+	text-align: center;
+	color:#515151;
+	text-decoration: none;
+}
+#navdiv ul li a:hover
+{
+	/*background: url(navlisttabhover.png) 0 0 no-repeat ;*/
+	background: #f7f7f7;
+}
+
+#navdiv ul li a.selected
+{
+	padding:30px 0 0 0;
+	background: #f7f7f7;
+	display: block;
+	padding-top:10px;
+	width: 100px;
+	height:50px;
+	text-align: center;
+	color:#515151;
+	text-decoration: none;
+}
+
+#content
+{
+background-color: #f7f7f7;
+padding:20px 0 20px 20px;
+height:700px;
+}
+
+h1,h2,h3,h4{
+padding:25px 0 5px 0 ;}
+
+h1{font-size:8em;padding-left:40px;}
+h2{font-size:2em;}
+h3{font-size:1.5em;}
+
+#picturelist {
+text-align:left;
+margin-right:auto;
+margin-left:auto;
+}
