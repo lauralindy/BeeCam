@@ -42,3 +42,6 @@ if (total!=0):
 else:
     percentagehealthy = 0
     percentagediseased = 0
+    
+    
+print one, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve, thirteen
