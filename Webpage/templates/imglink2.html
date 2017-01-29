@@ -70,444 +70,78 @@
         </div>
     </div>
     
-    <div class="col-lg-10">
-        <ul class="container">
-            {% for c in cells%}
-            <li class="collection-item avatar">
-                <a href=c>{{url_for('c')}}</a>
-            </li>
+    
+    <div class="col-lg-10" style="background-color: rgb(255,255,255)">
+        <ul class="row">
+            {% for p in paths1 %}
+                <div class="col-sm-2">
+                    <img src="{{url_for('static', filename=p)}}" class="img-responsive">
+                </div>
             {% endfor %}
         </ul>
     </div>
-    
-    <div id="tf-cells">
-        <div class="container">
-            <div class="section-title">
-                <center><h3>Cells</h3></center>
-                <hr>
-            </div>
-
-            <div class="space"></div>
-            
-            
-            
-            <div class="row">
+    <div class="col-lg-10" style="background-color: rgb(255,255,255)">
+        <ul class="row toppadding">
+            {% for p in paths2 %}
                 <div class="col-sm-2">
-                    <img src="{{url_for('static',filename='cells/cell0.jpg')}}" class="img-responsive">
-                    <figcaption>emerging worker</figcaption>
+                    <img src="{{url_for('static', filename=p)}}" class="img-responsive">
                 </div>
+            {% endfor %}
+        </ul>
+    </div>
+    <div class="col-lg-10" style="background-color: rgb(255,255,255)">
+        <ul class="row toppadding">
+            {% for p in paths3 %}
                 <div class="col-sm-2">
-                    <img src="{{url_for('static',filename='cells/cell1.jpg')}}" class="img-responsive">
-                    <figcaption>pollen</figcaption>
+                    <img src="{{url_for('static', filename=p)}}" class="img-responsive">
                 </div>
+            {% endfor %}
+        </ul>
+    </div>
+    <div class="col-lg-10" style="background-color: rgb(255,255,255)">
+        <ul class="row">
+            {% for p in paths4 %}
                 <div class="col-sm-2">
-                    <img src="{{url_for('static',filename='cells/cell10.jpg')}}" class="img-responsive">
-                    <figcaption>capped larva</figcaption>
+                    <img src="{{url_for('static', filename=p)}}" class="img-responsive">
                 </div>
+            {% endfor %}
+        </ul>
+    </div>
+    <div class="col-lg-10" style="background-color: rgb(255,255,255)">
+        <ul class="row">
+            {% for p in paths5 %}
                 <div class="col-sm-2">
-                    <img src="{{url_for('static',filename='cells/cell11.jpg')}}" class="img-responsive">
-                    <figcaption>honey</figcaption>
+                    <img src="{{url_for('static', filename=p)}}" class="img-responsive">
                 </div>
+            {% endfor %}
+        </ul>
+    </div>
+    <div class="col-lg-10" style="background-color: rgb(255,255,255)">
+        <ul class="row">
+            {% for p in paths6 %}
                 <div class="col-sm-2">
-                    <img src="{{url_for('static',filename='cells/cell12.jpg')}}" class="img-responsive">
-                    <figcaption>honey</figcaption>
+                    <img src="{{url_for('static', filename=p)}}" class="img-responsive">
                 </div>
+            {% endfor %}
+        </ul>
+    </div>
+    <div class="col-lg-10" style="background-color: rgb(255,255,255)">
+        <ul class="row">
+            {% for p in paths7 %}
                 <div class="col-sm-2">
-                    <img src="{{url_for('static',filename='cells/cell13.jpg')}}" class="img-responsive">
-                    <figcaption>honey</figcaption>
+                    <img src="{{url_for('static', filename=p)}}" class="img-responsive">
                 </div>
-            </div>
-
-            <div class="row toppadding">
+            {% endfor %}
+        </ul>
+    </div>
+    <div class="col-lg-10" style="background-color: rgb(255,255,255)">
+        <ul class="row">
+            {% for p in paths8 %}
                 <div class="col-sm-2">
-                    <img src="{{url_for('static',filename='cells/cell14.jpg')}}" class="img-responsive">
-                    <figcaption>honey</figcaption>
+                    <img src="{{url_for('static', filename=p)}}" class="img-responsive">
                 </div>
-                <div class="col-sm-2">
-                    <img src="{{url_for('static',filename='cells/cell15.jpg')}}" class="img-responsive">
-                    <figcaption>capped larva</figcaption>
-                </div>
-                <div class="col-md-2">
-                    <img src="{{url_for('static',filename='cells/cell16.jpg')}}" class="img-responsive">
-                    <figcaption>honey</figcaption>
-                </div>
-                <div class="col-md-2">
-                    <img src="{{url_for('static',filename='cells/cell17.jpg')}}" class="img-responsive">
-                    <figcaption>capped larva</figcaption>
-                </div>
-                <div class="col-md-2">
-                    <img src="{{url_for('static',filename='cells/cell18.jpg')}}" class="img-responsive">
-                    <figcaption>honey</figcaption>
-                </div>
-                <div class="col-md-2">
-                    <img src="{{url_for('static',filename='cells/cell19.jpg')}}" class="img-responsive">
-                    <figcaption>egg</figcaption>
-                </div>
-            </div>
-            
-            <div class="row toppadding">
-                <div class="col-sm-2">
-                    <img src="{{url_for('static',filename='cells/cell2.jpg')}}" class="img-responsive">
-                    <figcaption>honey</figcaption>
-                </div>
-                <div class="col-sm-2">
-                    <img src="{{url_for('static',filename='cells/cell21.jpg')}}" class="img-responsive">
-                    <figcaption>capped larva</figcaption>
-                </div>
-                <div class="col-md-2">
-                    <img src="{{url_for('static',filename='cells/cell22.jpg')}}" class="img-responsive">
-                    <figcaption>honey</figcaption>
-                </div>
-                <div class="col-md-2">
-                    <img src="{{url_for('static',filename='cells/cell23.jpg')}}" class="img-responsive">
-                    <figcaption>honey</figcaption>
-                </div>
-                <div class="col-md-2">
-                    <img src="{{url_for('static',filename='cells/cell24.jpg')}}" class="img-responsive">
-                    <figcaption>honey</figcaption>
-                </div>
-                <div class="col-md-2">
-                    <img src="{{url_for('static',filename='cells/cell25.jpg')}}" class="img-responsive">
-                    <figcaption>capped larva</figcaption>
-                </div>
-            </div>
-            
-            <div class="row toppadding">
-                <div class="col-sm-2">
-                    <img src="{{url_for('static',filename='cells/cell26.jpg')}}" class="img-responsive">
-                    <figcaption>capped larva</figcaption>
-                </div>
-                <div class="col-sm-2">
-                    <img src="{{url_for('static',filename='cells/cell27.jpg')}}" class="img-responsive">
-                    <figcaption>honey</figcaption>
-                </div>
-                <div class="col-md-2">
-                    <img src="{{url_for('static',filename='cells/cell28.jpg')}}" class="img-responsive">
-                    <figcaption>egg</figcaption>
-                </div>
-                <div class="col-md-2">
-                    <img src="{{url_for('static',filename='cells/cell29.jpg')}}" class="img-responsive">
-                    <figcaption>egg</figcaption>
-                </div>
-                <div class="col-md-2">
-                    <img src="{{url_for('static',filename='cells/cell3.jpg')}}" class="img-responsive">
-                    <figcaption>capped larva</figcaption>
-                </div>
-                <div class="col-md-2">
-                    <img src="{{url_for('static',filename='cells/cell30.jpg')}}" class="img-responsive">
-                    <figcaption>egg</figcaption>
-                </div>
-            </div>
-            
-            <div class="row toppadding">
-                <div class="col-sm-2">
-                    <img src="{{url_for('static',filename='cells/cell31.jpg')}}" class="img-responsive">
-                    <figcaption>capped larva</figcaption>
-                </div>
-                <div class="col-sm-2">
-                    <img src="{{url_for('static',filename='cells/cell32.jpg')}}" class="img-responsive">
-                    <figcaption>capped larva</figcaption>
-                </div>
-                <div class="col-md-2">
-                    <img src="{{url_for('static',filename='cells/cell33.jpg')}}" class="img-responsive">
-                    <figcaption>honey</figcaption>
-                </div>
-                <div class="col-md-2">
-                    <img src="{{url_for('static',filename='cells/cell34.jpg')}}" class="img-responsive">
-                    <figcaption>honey</figcaption>
-                </div>
-                <div class="col-md-2">
-                    <img src="{{url_for('static',filename='cells/cell35.jpg')}}" class="img-responsive">
-                    <figcaption>honey</figcaption>
-                </div>
-                <div class="col-md-2">
-                    <img src="{{url_for('static',filename='cells/cell36.jpg')}}" class="img-responsive">
-                    <figcaption>capped larva</figcaption>
-                </div>
-            </div>
-            
-            <div class="row toppadding">
-                <div class="col-sm-2">
-                    <img src="{{url_for('static',filename='cells/cell37.jpg')}}" class="img-responsive">
-                    <figcaption>honey</figcaption>
-                </div>
-                <div class="col-sm-2">
-                    <img src="{{url_for('static',filename='cells/cell38.jpg')}}" class="img-responsive">
-                    <figcaption>honey</figcaption>
-                </div>
-                <div class="col-md-2">
-                    <img src="{{url_for('static',filename='cells/cell39.jpg')}}" class="img-responsive">
-                    <figcaption>honey</figcaption>
-                </div>
-                <div class="col-md-2">
-                    <img src="{{url_for('static',filename='cells/cell4.jpg')}}" class="img-responsive">
-                    <figcaption>egg</figcaption>
-                </div>
-                <div class="col-md-2">
-                    <img src="{{url_for('static',filename='cells/cell40.jpg')}}" class="img-responsive">
-                    <figcaption>egg</figcaption>
-                </div>
-                <div class="col-md-2">
-                    <img src="{{url_for('static',filename='cells/cell41.jpg')}}" class="img-responsive">
-                    <figcaption>egg</figcaption>
-                </div>
-            </div>
-            
-            <div class="row toppadding">
-                <div class="col-sm-2">
-                    <img src="{{url_for('static',filename='cells/cell42.jpg')}}" class="img-responsive">
-                    <figcaption>capped larva</figcaption>
-                </div>
-                <div class="col-sm-2">
-                    <img src="{{url_for('static',filename='cells/cell43.jpg')}}" class="img-responsive">
-                    <figcaption>capped larva</figcaption>
-                </div>
-                <div class="col-md-2">
-                    <img src="{{url_for('static',filename='cells/cell44.jpg')}}" class="img-responsive">
-                    <figcaption>capped larva</figcaption>
-                </div>
-                <div class="col-md-2">
-                    <img src="{{url_for('static',filename='cells/cell45.jpg')}}" class="img-responsive">
-                    <figcaption>capped larva</figcaption>
-                </div>
-                <div class="col-md-2">
-                    <img src="{{url_for('static',filename='cells/cell46.jpg')}}" class="img-responsive">
-                    <figcaption>egg</figcaption>
-                </div>
-                <div class="col-md-2">
-                    <img src="{{url_for('static',filename='cells/cell47.jpg')}}" class="img-responsive">
-                    <figcaption>capped larva</figcaption>
-                </div>
-            </div>
-            
-            <div class="row toppadding">
-                <div class="col-sm-2">
-                    <img src="{{url_for('static',filename='cells/cell48.jpg')}}" class="img-responsive">
-                    <figcaption>capped larva</figcaption>
-                </div>
-                <div class="col-sm-2">
-                    <img src="{{url_for('static',filename='cells/cell49.jpg')}}" class="img-responsive">
-                    <figcaption>capped larva</figcaption>
-                </div>
-                <div class="col-md-2">
-                    <img src="{{url_for('static',filename='cells/cell5.jpg')}}" class="img-responsive">
-                    <figcaption>uncapped larva</figcaption>
-                </div>
-                <div class="col-md-2">
-                    <img src="{{url_for('static',filename='cells/cell50.jpg')}}" class="img-responsive">
-                    <figcaption>egg</figcaption>
-                </div>
-                <div class="col-md-2">
-                    <img src="{{url_for('static',filename='cells/cell51.jpg')}}" class="img-responsive">
-                    <figcaption>honey</figcaption>
-                </div>
-                <div class="col-md-2">
-                    <img src="{{url_for('static',filename='cells/cell52.jpg')}}" class="img-responsive">
-                    <figcaption>honey</figcaption>
-                </div>
-            </div>
-            
-            <div class="row toppadding">
-                <div class="col-sm-2">
-                    <img src="{{url_for('static',filename='cells/cell53.jpg')}}" class="img-responsive">
-                    <figcaption>capped larva</figcaption>
-                </div>
-                <div class="col-sm-2">
-                    <img src="{{url_for('static',filename='cells/cell54.jpg')}}" class="img-responsive">
-                    <figcaption>honey</figcaption>
-                </div>
-                <div class="col-md-2">
-                    <img src="{{url_for('static',filename='cells/cell55.jpg')}}" class="img-responsive">
-                    <figcaption>capped larva</figcaption>
-                </div>
-                <div class="col-md-2">
-                    <img src="{{url_for('static',filename='cells/cell56.jpg')}}" class="img-responsive">
-                    <figcaption>capped larva</figcaption>
-                </div>
-                <div class="col-md-2">
-                    <img src="{{url_for('static',filename='cells/cell57.jpg')}}" class="img-responsive">
-                    <figcaption>capped larva</figcaption>
-                </div>
-                <div class="col-md-2">
-                    <img src="{{url_for('static',filename='cells/cell58.jpg')}}" class="img-responsive">
-                    <figcaption>capped larva</figcaption>
-                </div>
-            </div>
-            
-            <div class="row toppadding">
-                <div class="col-sm-2">
-                    <img src="{{url_for('static',filename='cells/cell59.jpg')}}" class="img-responsive">
-                    <figcaption>capped larva</figcaption>
-                </div>
-                <div class="col-sm-2">
-                    <img src="{{url_for('static',filename='cells/cell6.jpg')}}" class="img-responsive">
-                    <figcaption>uncapped larva</figcaption>
-                </div>
-                <div class="col-md-2">
-                    <img src="{{url_for('static',filename='cells/cell60.jpg')}}" class="img-responsive">
-                    <figcaption>capped larva</figcaption>
-                </div>
-                <div class="col-md-2">
-                    <img src="{{url_for('static',filename='cells/cell61.jpg')}}" class="img-responsive">
-                    <figcaption>capped larva</figcaption>
-                </div>
-                <div class="col-md-2">
-                    <img src="{{url_for('static',filename='cells/cell62.jpg')}}" class="img-responsive">
-                    <figcaption>capped larva</figcaption>
-                </div>
-                <div class="col-md-2">
-                    <img src="{{url_for('static',filename='cells/cell63.jpg')}}" class="img-responsive">
-                    <figcaption>capped larva</figcaption>
-                </div>
-            </div>
-            
-            <div class="row toppadding">
-                <div class="col-sm-2">
-                    <img src="{{url_for('static',filename='cells/cell64.jpg')}}" class="img-responsive">
-                    <figcaption>capped larva</figcaption>
-                </div>
-                <div class="col-sm-2">
-                    <img src="{{url_for('static',filename='cells/cell65.jpg')}}" class="img-responsive">
-                    <figcaption>capped larva</figcaption>
-                </div>
-                <div class="col-md-2">
-                    <img src="{{url_for('static',filename='cells/cell66.jpg')}}" class="img-responsive">
-                    <figcaption>capped larva</figcaption>
-                </div>
-                <div class="col-md-2">
-                    <img src="{{url_for('static',filename='cells/cell67.jpg')}}" class="img-responsive">
-                    <figcaption>capped larva</figcaption>
-                </div>
-                <div class="col-md-2">
-                    <img src="{{url_for('static',filename='cells/cell68.jpg')}}" class="img-responsive">
-                    <figcaption>capped larva</figcaption>
-                </div>
-                <div class="col-md-2">
-                    <img src="{{url_for('static',filename='cells/cell69.jpg')}}" class="img-responsive">
-                    <figcaption>capped larva</figcaption>
-                </div>
-            </div>
-            
-            <div class="row toppadding">
-                <div class="col-sm-2">
-                    <img src="{{url_for('static',filename='cells/cell7.jpg')}}" class="img-responsive">
-                    <figcaption>honey</figcaption>
-                </div>
-                <div class="col-sm-2">
-                    <img src="{{url_for('static',filename='cells/cell71.jpg')}}" class="img-responsive">
-                    <figcaption>honey</figcaption>
-                </div>
-                <div class="col-md-2">
-                    <img src="{{url_for('static',filename='cells/cell72.jpg')}}" class="img-responsive">
-                    <figcaption>capped larva</figcaption>
-                </div>
-                <div class="col-md-2">
-                    <img src="{{url_for('static',filename='cells/cell73.jpg')}}" class="img-responsive">
-                    <figcaption>capped larva</figcaption>
-                </div>
-                <div class="col-md-2">
-                    <img src="{{url_for('static',filename='cells/cell74.jpg')}}" class="img-responsive">
-                    <figcaption>capped larva</figcaption>
-                </div>
-                <div class="col-md-2">
-                    <img src="{{url_for('static',filename='cells/cell75.jpg')}}" class="img-responsive">
-                    <figcaption>honey</figcaption>
-                </div>
-            </div>
-            
-            <div class="row toppadding">
-                <div class="col-sm-2">
-                    <img src="{{url_for('static',filename='cells/cell76.jpg')}}" class="img-responsive">
-                    <figcaption>capped larva</figcaption>
-                </div>
-                <div class="col-sm-2">
-                    <img src="{{url_for('static',filename='cells/cell77.jpg')}}" class="img-responsive">
-                    <figcaption>capped larva</figcaption>
-                </div>
-                <div class="col-md-2">
-                    <img src="{{url_for('static',filename='cells/cell78.jpg')}}" class="img-responsive">
-                    <figcaption>honey</figcaption>
-                </div>
-                <div class="col-md-2">
-                    <img src="{{url_for('static',filename='cells/cell79.jpg')}}" class="img-responsive">
-                    <figcaption>empty</figcaption>
-                </div>
-                <div class="col-md-2">
-                    <img src="{{url_for('static',filename='cells/cell8.jpg')}}" class="img-responsive">
-                    <figcaption>honey</figcaption>
-                </div>
-                <div class="col-md-2">
-                    <img src="{{url_for('static',filename='cells/cell81.jpg')}}" class="img-responsive">
-                    <figcaption>honey</figcaption>
-                </div>
-            </div>
-            
-            <div class="row toppadding">
-                <div class="col-sm-2">
-                    <img src="{{url_for('static',filename='cells/cell82.jpg')}}" class="img-responsive">
-                    <figcaption>capped larva</figcaption>
-                </div>
-                <div class="col-sm-2">
-                    <img src="{{url_for('static',filename='cells/cell83.jpg')}}" class="img-responsive">
-                    <figcaption>capped larva</figcaption>
-                </div>
-                <div class="col-md-2">
-                    <img src="{{url_for('static',filename='cells/cell84.jpg')}}" class="img-responsive">
-                    <figcaption>capped larva</figcaption>
-                </div>
-                <div class="col-md-2">
-                    <img src="{{url_for('static',filename='cells/cell85.jpg')}}" class="img-responsive">
-                    <figcaption>egg</figcaption>
-                </div>
-                <div class="col-md-2">
-                    <img src="{{url_for('static',filename='cells/cell86.jpg')}}" class="img-responsive">
-                    <figcaption>honey</figcaption>
-                </div>
-                <div class="col-md-2">
-                    <img src="{{url_for('static',filename='cells/cell87.jpg')}}" class="img-responsive">
-                    <figcaption>capped larva</figcaption>
-                </div>
-            </div>
-            
-            <div class="row toppadding">
-                <div class="col-sm-2">
-                    <img src="{{url_for('static',filename='cells/cell88.jpg')}}" class="img-responsive">
-                    <figcaption>egg</figcaption>
-                </div>
-                <div class="col-sm-2">
-                    <img src="{{url_for('static',filename='cells/cell89.jpg')}}" class="img-responsive">
-                    <figcaption>capped larva</figcaption>
-                </div>
-                <div class="col-md-2">
-                    <img src="{{url_for('static',filename='cells/cell9.jpg')}}" class="img-responsive">
-                    <figcaption>honey</figcaption>
-                </div>
-                <div class="col-md-2">
-                    <img src="{{url_for('static',filename='cells/cell90.jpg')}}" class="img-responsive">
-                    <figcaption>capped larva</figcaption>
-                </div>
-                <div class="col-md-2">
-                    <img src="{{url_for('static',filename='cells/cell91.jpg')}}" class="img-responsive">
-                    <figcaption>honey</figcaption>
-                </div>
-                <div class="col-md-2">
-                    <img src="{{url_for('static',filename='cells/cell92.jpg')}}" class="img-responsive">
-                    <figcaption>capped larva</figcaption>
-                </div>
-            </div>
-            
-            <div class="row toppadding">
-                <div class="col-sm-2">
-                    <img src="{{url_for('static',filename='cells/cell93.jpg')}}" class="img-responsive">
-                    <figcaption>capped larva</figcaption>
-                </div>
-                <div class="col-sm-2">
-                    <img src="{{url_for('static',filename='cells/cell94.jpg')}}" class="img-responsive">
-                    <figcaption>capped larva</figcaption>
-                </div>
-            </div>
-            
-        </div>
+            {% endfor %}
+        </ul>
     </div>
     
     <nav id="tf-footer">
