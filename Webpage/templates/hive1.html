@@ -73,26 +73,41 @@
     <div id="tf-mybees">
         <div class="container">
             <div class="section-title">
-                <center><h3>My Hives</h3></center>
+                <center><h3>My Bees</h3></center>
                 <hr>
             </div>
 
             <div class="space"></div>
-            
+
             <div class="row">
-                <div class="col-md-3">
-                    <a href={{url_for('imglink')}}><img src="{{url_for('static', filename='img/box.png')}}" class="img-responsive" style="height: 200px; overflow: hidden"></a>
-                    <figcaption>Hive 1</figcaption>
+                <div class="col-md-3" style="height: 180px; overflow: hidden">
+                    <img src="{{url_for('static', filename='img/capped.jpg')}}" class="img-responsive">
                 </div>
 
-                <div class="col-md-3">
-                    <img src="{{url_for('static', filename='img/box.png')}}" class="img-responsive" style="height: 200px; overflow: hidden">
-                    <figcaption>Hive 2</figcaption>
+                <div class="col-md-3" style="height: 180px; overflow: hidden">
+                    <img src="{{url_for('static', filename='img/capped1.jpg')}}" class="img-responsive">
                 </div>
 
+                <div class="col-md-3" style="height: 180px; overflow: hidden">
+                    <a href={{url_for('imglink')}}><img src="{{url_for('static', filename='img/image.jpg')}}" class="img-responsive"></a>
+                </div>
+                
+                <div class="col-md-3" style="height: 180px; overflow: hidden">
+                    <img src="{{url_for('static', filename='img/image3.jpg')}}" class="img-responsive">
+                </div>
+            </div>
+
+            <div class="row toppadding" style="height: 180px; overflow: hidden">
                 <div class="col-md-3">
-                    <img src="{{url_for('static', filename='img/box.png')}}" class="img-responsive" style="height: 200px; overflow: hidden">
-                    <figcaption>Hive 3</figcaption>
+                    <img src="{{url_for('static', filename='img/long1.jpg')}}" class="img-responsive">
+                </div>
+              
+                <div class="col-md-3" style="height: 180px; overflow: hidden">
+                    <img src="{{url_for('static', filename='img/long2.jpg')}}" class="img-responsive">
+                </div>
+
+                <div class="col-md-3" style="height: 180px; overflow: hidden">
+                    <img src="{{url_for('static', filename='img/larva.jpg')}}" class="img-responsive">
                 </div>
             </div>
 

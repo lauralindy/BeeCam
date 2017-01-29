@@ -40,6 +40,10 @@ def signup():
 def mybees():
     return render_template("mybees.html")
 
+@app.route('/hive1')
+def hive1():
+    return render_template("hive1.html")
+
 @app.route('/data')
 def data():
     return render_template("data.html")
@@ -50,8 +54,16 @@ def upload():
 
 @app.route('/imglink')
 def imglink():
-    database.findCells("C:\Users\laura\Documents\GitHub\BeeCAm\Big Pics\image.jpg")
-    return render_template("imglink.html")
+    paths = database.findCells("/Users/EmmaXu/Documents/Programming/ABeeCam/Big Pic/image.jpg")
+    paths1 = paths[0:6]
+    paths2=paths[6:12]
+    paths3=paths[12:18]
+    paths4=paths[18:24]
+    paths5=paths[24:30]
+    paths6=paths[30:36]
+    paths7=paths[36:42]
+    paths8=paths[42:48]
+    return render_template("imglink.html", paths1=paths1, paths2=paths2, paths3=paths3)
 
 @app.route('/testing')
 def testing():
