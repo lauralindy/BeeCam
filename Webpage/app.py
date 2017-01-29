@@ -34,9 +34,17 @@ def login():
 def signup():
     return render_template("signup.html")
 
+@app.route('/mybees')
+def mybees():
+    return render_template("mybees.html")
+
 @app.route('/testing')
 def testing():
     return "index.html"
+
+@app.route('/tryit')
+def tryit():
+    return render_template("try.html")
 
 if __name__ == "__main__":
     app.run(debug=True)
